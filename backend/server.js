@@ -13,7 +13,7 @@ import { app,server } from "./config/soket.js";
 
 env.config()
 
-const __directry=path.resolve()
+const __dirname=path.resolve()
 const port=5000;
 app.use(express.urlencoded({extended:true}));
 app.use(express.json({limit:'10mb'}))

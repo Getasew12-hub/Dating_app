@@ -10,7 +10,6 @@ import { conneDb } from "./config/db.js";
 import Cloudinary from "./config/cloudinary.js"
 import matchRouter from "./routers/match.router.js"
 import { app,server } from "./config/soket.js";
-import passport from "passport";
 
 env.config()
 
@@ -19,7 +18,7 @@ const port=5000;
 app.use(express.urlencoded({extended:true}));
 app.use(express.json({limit:'10mb'}))
 app.use(cookieParser())
-app.use(passport.initialize());
+
 Cloudinary()
 
 app.use("/api/auth",authRouter)

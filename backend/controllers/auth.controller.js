@@ -24,7 +24,7 @@ export const Signup=async (req,res) => {
     if(password?.length<6) return res.status(400).json({error:'Password needed at list 6 charactures'})
 
         if(age<18)return res.status(400).json({error:'You must be at list 18 year old'})
-    const getuser=await user.find({email});
+    const getuser=await user.findOne({email});
         
         if(getuser) return res.status(400).json({error:'User already exist please try to login'})
           const hashpassword=await bcrypt.hash(password,10)

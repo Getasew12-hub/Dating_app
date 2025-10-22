@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import {Link} from "react-router-dom"
 import userStore from '../store/user';
-const GOOLE_URL="http://localhost:5000/api/authgoogle/google";
+
 function Login() {
   const {loadding,Login}=userStore()
 
@@ -31,7 +31,7 @@ setFormInput((pre)=>{
     <div className='min-h-screen w-screen bg-gradient-to-b from-red-400 to-pink-700 flex justify-center items-center '>
       <div className='mt-10   block px-2 w-screen sm:w-auto'>
         <h2 className='text-center font-bold mb-3 sm:text-3xl text-white text-xl'>Sign in to SWipe </h2>
-      <a href={GOOLE_URL}>Login with Google</a>
+     
         <div className='sm:w-96 w-full bg-white p-3 rounded mb-10'>
           <form className='sm:space-y-5 space-y-3' onSubmit={FormSend}>
        

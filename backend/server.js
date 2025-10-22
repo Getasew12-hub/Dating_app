@@ -23,7 +23,7 @@ app.use(passport.initialize());
 Cloudinary()
 
 app.use("/api/auth",authRouter)
-app.use("/api/authgoogle",AuthgoogleRouter)
+
 app.use("/api/users",usersRouter)
 app.use("/api/messages",messageRouter)
 app.use("/api/match",matchRouter)

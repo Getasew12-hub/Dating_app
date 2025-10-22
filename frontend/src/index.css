@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#gridbg{
+
+background:repeating-linear-gradient(to bottom,rgb(230, 227, 227),rgb(230, 227, 227) 1px,transparent 1px ,transparent 50px), repeating-linear-gradient(to right,rgb(230, 227, 227),rgb(230, 227, 227) 1px,transparent 1px ,transparent 50px);
+
+background-size:50px 50px;
+}
+
+    .commingup{
+        animation: commingup 0.5s linear forwards ;
+         transform: translateY(-100%);
+      }
+
+      @keyframes commingup {
+        form{
+          transform: translateY(-100%);
+          opacity:0;
+        }to{
+          transform: translateY(0);
+           opacity:1;
+        }
+      }
+
+
+    .backup{
+        animation: backup 0.5s linear forwards;
+         transform: translateY(0);
+      }
+
+      @keyframes backup {
+        form{
+          transform: translateY(0);
+        }to{
+          transform: translateY(-100%);
+          opacity:0;
+          display:none;
+        }
+      }
+
+
+     
+      .hiddenscroll::-webkit-scrollbar {
+        display: none;
+     }
+      /* #home{
+        
+    
+      background: radial-gradient(transparent,pink);
+  
+      } */

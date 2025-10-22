@@ -11,7 +11,7 @@ import Cloudinary from "./config/cloudinary.js"
 import matchRouter from "./routers/match.router.js"
 import { app,server } from "./config/soket.js";
 import passport from "passport";
-import AuthgoogleRouter from "./routers/authgoogleRouter.js"
+
 env.config()
 
 const __directry=path.resolve()
